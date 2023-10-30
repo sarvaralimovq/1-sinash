@@ -1,0 +1,122 @@
+.nav {
+    display: flex;
+    align-items: center;
+padding-top: 30px;
+.big{
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+    .hamburger {
+        i {
+            font-size: 50px;
+        }
+
+        color: #FF8053;
+    }
+
+    .header__logo {
+        display: flex;
+        gap: 12px;
+        margin-left: 18px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    .header__list {
+        display: flex;
+        list-style-type: none;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 96px;
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .header__link {
+            position: relative;
+
+            input {
+                padding: 7px 25px;
+                border-radius: 25px;
+                background: #3C3C3C;
+                border: none;
+                color: #fff;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+
+            .bi-search {
+                position: absolute;
+                right: 20px;
+                color: #fff;
+                top: 7%;
+            }
+
+            .header__telegram {
+                border-radius: 20px;
+                background: #249AD6;
+                padding: 9px 20px 10px 20px;
+                color: #fff;
+
+                i {
+                    margin-left: 5px;
+                }
+            }
+
+            .header__leange {
+                background-color: transparent;
+                border: none;
+
+                .span1 {
+                    color: #F15A24;
+                    font-family: Montserrat;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                .span2 {
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+            }
+
+            .header__login {
+                border-radius: 40px;
+                background: #F15A24;
+                padding: 13px 45px;
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .light{
+                background-color: transparent !important; 
+                border: none;
+                i{
+                    font-size: 35px;
+                    color: #F15A24;
+                    background-color: transparent;
+                }
+.bi-moon{
+    color: #F15A24;
+}
+            }
+        }
+    }
+}

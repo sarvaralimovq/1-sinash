@@ -1,9 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    max-width: 1100px;
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1855px;
     padding: 10px;
+}
+
+.light {
+    background-color: #fff !important;
+    color: #000000;
+
+    .header__link {
+        input {
+            background: #F15A24 !important;
+        }
+        .span1{
+            color: #000000 !important ;
+        }
+        .span2{
+            color: #F15A24 !important;
+        }
+    }
 }
