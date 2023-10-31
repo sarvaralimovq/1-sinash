@@ -26,16 +26,17 @@ function Header() {
                     <div  className="big">
                         <div className="hamburger">
                             <div className="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                <div class="btn-group" role="group">
-                                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div className="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                        
                                         <i className="bi bi-list"></i>
                                     </button>
-                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                        <li><Link class="dropdown-item" href="#">Home</Link></li>
-                                        <li><Link class="dropdown-item" href="#">About</Link></li>
-                                        <li><Link class="dropdown-item" href="#">Services</Link></li>
-                                        <li><Link class="dropdown-item" href="#">Contact</Link></li>
+                                    <ul className="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <i class="bi bi-caret-down-fill"></i>
+                                        <li><Link className="dropdown-item" href="#">Home</Link></li>
+                                        <li><Link className="dropdown-item" href="#">About</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Services</Link></li>
+                                        <li><Link className="dropdown-item" href="#">Contact</Link></li>
                                       
                                     </ul>
                                 </div>
@@ -76,7 +77,7 @@ function Header() {
                             <Link className='header__link' >
                                 <button className='header__login'>Login</button>
                                 <button className='header__loginRes'>
-                                <i class="bi bi-person-fill"></i>
+                                <i className="bi bi-person-fill"></i>
                                 </button>
                             </Link>
                         </li>
@@ -84,7 +85,7 @@ function Header() {
                             <a className='header__link' href="#">
                                 <button className='light'>{
 
-                                    svet == false ? <i className="bi bi-sun"></i> : <i class="bi bi-moon"></i>
+                                    svet == false ? <i className="bi bi-sun"></i> : <i className="bi bi-moon"></i>
                                 }</button>
                             </a>
                         </li>
