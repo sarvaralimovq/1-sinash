@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.App{
+
+.App {
     background-color: #000000;
 }
+
 // body {
-   
+
 // }
 
 .container {
@@ -18,27 +20,36 @@
 .light {
     background-color: #fff !important;
     color: #000000;
-    a{
+
+    a {
         color: #000000 !important;
     }
-    .bi-search{
+
+    .bi-search {
         color: #342f2d !important;
     }
-    .header__leange{
-        .span1{
-            color: #000000 !important ;
+
+    .header__leange {
+        .span1 {
+            color: #000000 !important;
             
         }
-        .span2{
+
+        .span2 {
             color: #F15A24 !important;
-         
+
         }
     }
+
     .header__link {
-     
+
         input {
             background: #F15A24 !important;
         }
-       
+
+    }
+
+    li {
+        color: #F15A24 !important;
     }
 }

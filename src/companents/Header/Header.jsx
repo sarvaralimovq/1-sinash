@@ -4,21 +4,33 @@ import './Header.scss'
 import { Context } from '../../Context/Context'
 import { Link } from 'react-router-dom'
 // onClick={()=> setLanguage(1)} className={language == 1?'span1':'span1'}
+
 function Header() {
     const { svet, setSvet } = useContext(Context)
     const { language, setLanguage } = useContext(Context)
+    const {searche, setSearche} = useContext(Context)
     const inpRef = useRef(0)
+    
+    
     // console.log(language);
     const [vWidth, setVWidth] = useState(window.innerWidth);
     window.addEventListener("resize", () => {
       setVWidth(window.innerWidth);
     });
+    // inpRef.current.addEventListener('keydown',(e)=>{
+    //     // e.preventDefault()
+    //     setSearche(inpRef.current.value)
+    // })
     function fn (){
         if(vWidth<=1010){
         inpRef.current.classList.toggle('big__inp')
         
         }
     }
+    // function fnSeache (){
+    //     setSearche(inpRef.current.value)
+
+    // }
     return (
         <div className='Header'>
             <div className="container">
@@ -52,7 +64,7 @@ function Header() {
                     <ul className='header__list'>
                         <li className='header__item'>
                             <a className='header__link' href="#">
-                                <input ref={inpRef} className={language==1?'header__uab header__search':'header__rus header__search'}  type="text" placeholder={
+                                <input ref={inpRef} onChange={(e) => setSearche(e.target.value)} className={language==1?'header__uab header__search':'header__rus header__search'}  type="text" placeholder={
                                     language==1?'Anime nomini kiriting':'Введите название Aниме '
                                 } />
                                 <i onClick={fn} className="bi bi-search"></i>
