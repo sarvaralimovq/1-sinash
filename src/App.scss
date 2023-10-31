@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+.App{
     background-color: #000000;
 }
+// body {
+   
+// }
 
 .container {
     max-width: 1855px;
@@ -16,16 +18,24 @@ body {
 .light {
     background-color: #fff !important;
     color: #000000;
-
-    .header__link {
-        input {
-            background: #F15A24 !important;
-        }
+    a{
+        color: #000000 !important;
+    }
+    .header__leange{
         .span1{
             color: #000000 !important ;
+            
         }
         .span2{
             color: #F15A24 !important;
+         
         }
+    }
+    .header__link {
+     
+        input {
+            background: #F15A24 !important;
+        }
+       
     }
 }
