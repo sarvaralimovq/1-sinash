@@ -73,9 +73,12 @@ function Header() {
                            
                         </li>
                         <li className='header__item'>
-                            <a className='header__link' href="#">
+                            <Link className='header__link' >
                                 <button className='header__login'>Login</button>
-                            </a>
+                                <button className='header__loginRes'>
+                                <i class="bi bi-person-fill"></i>
+                                </button>
+                            </Link>
                         </li>
                         <li onClick={() => setSvet(!svet)} className='header__item'>
                             <a className='header__link' href="#">
