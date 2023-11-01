@@ -18,8 +18,9 @@ function Hero() {
     // const [hover , setHover]=useState(false)
     // console.log(hover);
     // onMouseEnter={()=> setHover(true)} onMouseOut={()=> setHover(false)}
-    const [searcheData, setSearcheData] = useState(faceData)
     const {searche, setSearche} = useContext(Context)
+    const [searcheData, setSearcheData] = useState(faceData)
+
     // console.log(searche);
     // useEffect(()=> {
     //     const Debounce = setTimeout(()=> {
@@ -29,6 +30,11 @@ function Hero() {
     //     }, 300)
     //     return () => clearTimeout(Debounce)
     // } , [setSearcheData])
+    // for (let index = 4; index > faceData.length; index++) {
+    // const [searcheData, setSearcheData] = useState(faceData)
+        
+    // }
+    // .filter((item)=> item.name.toLowerCase().includes(searche.toLowerCase()))
     return (
         <div className='Hero'>
             <div className="conatiner">
@@ -36,7 +42,7 @@ function Hero() {
                     <ul className='hero__list'>
 
                         {
-                            searcheData.filter((item)=> item.name.toLowerCase().includes(searche.toLowerCase())).map((item, index) => (
+                            searcheData.map((item, index) =>  (
 
                                 <li  className='hero__item' key={index}>
                                     <img src={item.img} alt="img" />
