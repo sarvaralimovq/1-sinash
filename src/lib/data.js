@@ -4,68 +4,69 @@ export const faceData = [
         name:'Anime 1',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: '1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
+        idHref:1 ,
     },
     {
         id:2,
         name:'Anime 2',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:2 ,
     },
     {
         id:3,
         name:'Anime 3',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:3,
     },
     {
         id:4,
         name:'Anime 4',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:4,
     },
     {
         id:5,
         name:'Anime 5',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:5,
     },
     {
         id:6,
         name:'Anime 6',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:6,
     },
     {
         id:7,
         name:'Anime 7',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:7,
     },
     {
         id:8,
         name:'Anime 8',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:8,
     },
     {
         id:9,
         name:'Anime 9',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:9,
     },
     {
         id:10,
         name:'Anime 10',
         img:"https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/luffy-from-one-piece-goku-from-dragon-ball-z-and-saitama-from-one-punch-man.jpg",
         info: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos similique dolore rem illo dolores quo saepe quae! Suscipit nemo ipsum necessitatibus nostrum numquam dolorem, placeat cumque libero corporis autem?',
-        
+        idHref:'http://localhost:3000/#10',
     },
 ]

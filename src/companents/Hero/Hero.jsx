@@ -44,7 +44,7 @@ function Hero() {
                         {
                             searcheData.map((item, index) =>  (
 
-                                <li  className='hero__item' key={index}>
+                                <li id={item.idHref}  className='hero__item' key={index}>
                                     <img src={item.img} alt="img" />
                                     <h2>{item.name}</h2>
                                     <p>{item.info}</p>
@@ -58,6 +58,7 @@ function Hero() {
 
                             ))
                         }
+                        <div id='1'>sss</div>
                     </ul>
                 </div>
             </div>

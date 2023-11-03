@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import logo from '../../img/logo.png'
 import './Header.scss'
 import { Context } from '../../Context/Context'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { faceData } from '../../lib/data'
 // onClick={()=> setLanguage(1)} className={language == 1?'span1':'span1'}
 // .filter((item)=> item.name.toLowerCase() == (searche.toLowerCase()))
@@ -25,8 +25,8 @@ function Header() {
     const [searcheData, setSearcheData] = useState(faceData)
     const [active , setActive] = useState(false)
     const inpRef = useRef(0)
-
-
+    const inpRef2 = useRef(0)
+// const location = useLocation(0).pathname
 
     // useEffect(()=> {
     //     const Debounce = setTimeout(()=> {
@@ -47,6 +47,12 @@ function Header() {
     window.addEventListener("resize", () => {
         setVWidth(window.innerWidth);
     });
+    window.addEventListener('click', (e)=> {
+        if(e.target.id != 'input__window'){
+            setActive(false)
+
+        }
+    })
     // inpRef.current.addEventListener('keydown',(e)=>{
     //     // e.preventDefault()
     //     setSearche(inpRef.current.value)
@@ -54,6 +60,7 @@ function Header() {
     function fn() {
         if (vWidth <= 1010) {
             inpRef.current.classList.toggle('big__inp')
+            inpRef2.current.classList.toggle('big__inp2')
             
         }
     }
@@ -96,20 +103,23 @@ function Header() {
                         </div>
                     </div>
                     <ul className='header__list'>
-                        <li className='header__item'>
+                        <li  ref={inpRef2} className='header__item inp__boxshadow'>
                             <a className='header__link' href="#">
-                                <input ref={inpRef} onChange={(e) => setSearche(e.target.value)}  className={language == 1 ? 'header__uab header__search' : 'header__rus header__search'} type="text" placeholder={
-                                    language == 1 ? 'Anime nomini kiriting' : 'Введите название Aниме '
+                                <input id='input__window' ref={inpRef} onChange={(e) => setSearche(e.target.value )   } onClick={()=> setActive(!active)}  className={language == 1 ? 'header__uab header__search' : 'header__rus header__search'} type="text" placeholder={
+                                    language == 1 ? 'Anime nomini kiriting' : 'Введите название Aниме ' 
                                 } />
-                                <ul className='searche__heroData'>
+                                   
+                                <ul className={active == true?'searche__heroData': 'none'}>
                                     {
                                     
-                                        searcheData?.map((item , index)=>(
+                                        searcheData?.filter((item)=> item.name.toLowerCase().includes(searche.toLowerCase())).map((item , index)=>(
 
-                                            <li key={index}>
-                                                    <img src={item.img} alt="img" />
+                                            <li  key={index}>
+                                                   <a href={ item.idHref}>
+                                                   <img src={item.img} alt="img" />
                                                     <h2>{item.name}</h2><br />
                                                     <p>{item.info}</p>
+                                                   </a>
                                             </li>
                                         ))
                                         
@@ -118,7 +128,7 @@ function Header() {
                                     }
 
                                 </ul>
-                                <i onClick={fn} className="bi bi-search"></i>
+                                <i id='input__window' onClick={fn} className="bi bi-search"></i>
                             </a>
                         </li>
                         <li className='header__item'>
