@@ -1,37 +1,92 @@
-.hero__list {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-gap: 25px;
-    list-style: none;
-a{
-    text-decoration: none;
-    color: #fff;
+.hero__inner {
+    width: 73%;
+    height: 100%;
 }
-    li {
-        width: 600px;
-        height: 500px;
-        text-align: center;
-        background-color: aqua;
-        border-radius: 10px;
-        border: none;
-        color: #fff;
-overflow: hidden;
-        img {
-            width: 100%;
-            height: 300px;
 
-        }
-       
-        
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-pagination {
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    max-width: 150px !important;
+    left: unset !important;
+}
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #d9d9d9 !important;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25)) !important;
+    opacity: 1 !important;
+}
+.swiper-backface-hidden .swiper-slide {
+    background-color: transparent !important;
+}
+.mySwiper {
+    background-color: transparent;
+    img {
+        border-radius: 10px;
     }
 }
-.heroHover__bottom{
- margin-bottom: -100px;
-  
+.swiper-pagination-bullet-active {
+    background-color: #f15a24 !important;
 }
-.heroHover__top{
-    margin-bottom: 200px;
-   
+.hero__tomosha {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f15a24;
+    padding: 10px;
+    .hero__tomosha-left {
+        color: #fff;
+        h2 {
+            height: 44px;
+            flex-shrink: 0;
+        }
+        p {
+            max-width: 810px;
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+    .hero__tomosha-right {
+       display: flex;
+       align-items: center;
+        button {
+            background-color: #fff;
+            padding: 20px 16px 21px 16px;
+            border-radius: 40px;
+            border: none;
+            color: #f15a24;
+            font-family: Montserrat;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
 }

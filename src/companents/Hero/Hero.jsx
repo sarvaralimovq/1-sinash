@@ -1,69 +1,45 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { faceData } from '../../lib/data'
+import React from 'react'
 import './Hero.scss'
-import { Link } from 'react-router-dom'
-import { Context } from '../../Context/Context'
-// const filterCars = (searchText, listofCars)=> {
-// if(!searchText){
-//     return listofCars ;
-// }else{
-//     return listofCars.filter(({ car_model })=> 
-//     car_model.toLowerCase().includec(searchText.toLowerCase()) 
-    
-//     );
-// }
-// }
+import heroImg from '../../img/heroImg.png'
+// import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 function Hero() {
-    // const [hover , setHover]=useState(false)
-    // console.log(hover);
-    // onMouseEnter={()=> setHover(true)} onMouseOut={()=> setHover(false)}
-    const {searche, setSearche} = useContext(Context)
-    const [searcheData, setSearcheData] = useState(faceData)
-
-    // console.log(searche);
-    // useEffect(()=> {
-    //     const Debounce = setTimeout(()=> {
-    //         const filteredCars = filterCars(searche, faceData);
-    //         setSearcheData(filteredCars)
-
-    //     }, 300)
-    //     return () => clearTimeout(Debounce)
-    // } , [setSearcheData])
-    // for (let index = 4; index > faceData.length; index++) {
-    // const [searcheData, setSearcheData] = useState(faceData)
-        
-    // }
-    // .filter((item)=> item.name.toLowerCase().includes(searche.toLowerCase()))
-    return (
-        <div className='Hero'>
-            <div className="conatiner">
-                <div className="hero__inner">
-                    <ul className='hero__list'>
-
-                        {
-                            searcheData.map((item, index) =>  (
-
-                                <li id={item.idHref}  className='hero__item' key={index}>
-                                    <img src={item.img} alt="img" />
-                                    <h2>{item.name}</h2>
-                                    <p>{item.info}</p>
-                                    {/* <span  className={hover == true?'heroHover__top':null || hover == false? 'heroHover__bottom' : null}>
-                                        <Link><button>Vidio</button></Link>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique iste incidunt ad, cumque ea nihil magnam esse animi aperiam sunt corrupti pariatur earum deserunt sapiente ab aspernatur distinctio quod exercitationem!</p>
-                                    
-                                    </span> */}
-                                </li>
-
-
-                            ))
-                        }
-                        <div id='1'>sss</div>
-                    </ul>
+  return (
+    <div className='Hero'>
+        <div className="container">
+            <div className="hero__inner">
+                <div className="hero__top">
+                <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        <SwiperSlide><img src={heroImg} alt="img" /></SwiperSlide>
+        <SwiperSlide><img src={heroImg} alt="heroImg" /></SwiperSlide>
+        <SwiperSlide><img src={heroImg} alt="heroImg" /></SwiperSlide>
+        <SwiperSlide><img src={heroImg} alt="heroImg" /></SwiperSlide>
+        <SwiperSlide><img src={heroImg} alt="heroImg" /></SwiperSlide>
+        <SwiperSlide><img src={heroImg} alt="heroImg" /></SwiperSlide>
+      </Swiper>
+    <div className="hero__tomosha">
+        <div className="hero__tomosha-left">
+            <h2>Demon Slayer:  Qizil fonarlar kvartali {'{2-mavsum}'}</h2>
+            <p>Tanjiro Kamado Qizil Nur tumanidagi jangda omon qolishga muvaffaq bo'lgan bo'lsa-da, uning katanasi jiddiy shikastlangan va uni almashtirish kerak edi. Shuning uchun Tanjiro o'zining singlisi Nezuko bilan yangi katana yasash uchun temirchi qishlog'iga boradi....</p>
+        </div>
+        <div className="hero__tomosha-right">
+            <button>Tomosha qilish</button>
+        </div>
+    </div>
                 </div>
             </div>
         </div>
-    )
+    </div>
+  )
 }
 
 export default Hero

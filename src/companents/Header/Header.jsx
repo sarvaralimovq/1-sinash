@@ -112,7 +112,7 @@ function Header() {
                                 <ul className={active == true?'searche__heroData': 'none'}>
                                     {
                                     
-                                        searcheData?.filter((item)=> item.name.toLowerCase().includes(searche.toLowerCase())).map((item , index)=>(
+                                        searcheData?.filter((item)=> item.name.toLowerCase() &&  item.info.toLowerCase().includes(searche.toLowerCase())).map((item , index)=>(
 
                                             <li  key={index}>
                                                    <a href={ item.idHref}>
