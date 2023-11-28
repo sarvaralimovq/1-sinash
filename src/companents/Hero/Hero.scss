@@ -44,9 +44,15 @@
 }
 .mySwiper {
     background-color: transparent;
-    img {
-        border-radius: 10px;
+    .swiper-slide{
+        border-radius: 10px !important;
+overflow: hidden !important;
+img{
+    width: 100%;
+    height: 100%;
+}
     }
+   
 }
 .swiper-pagination-bullet-active {
     background-color: #f15a24 !important;
@@ -87,6 +93,12 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+            &:hover{
+                background-color: #5f1e06;
+                color: #fff;
+                transition: all 1s ease;
+              
+            }
         }
     }
 }
